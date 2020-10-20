@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selenide.open;
 class CallbackTest {
     @Test
     void shouldSubmitRequest() {
-        open("http://localhost:7777");
+        open("http://localhost:9999");
         SelenideElement form = $("form.form");
         form.$("[data-test-id=name] input").setValue("Белоусова Анна");
         form.$("[data-test-id=phone] input").setValue("+79266858100");
